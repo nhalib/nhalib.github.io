@@ -56,6 +56,21 @@
       font-size: 0.9rem;
       margin-bottom: 2.5rem;
     }
+    details {
+      margin: 0 0 1.5rem;
+    }
+    summary {
+      cursor: pointer;
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    details[open] > summary {
+      margin-bottom: 0.75rem;
+    }
+    details ul {
+      margin-top: 0;
+    }
   </style>
 </head>
 <body>
@@ -68,9 +83,9 @@
 
     <p class="date">Date: November 15, 2026</p>
 
-    <p>I graduated from my doctoral studies gung ho about the prospects of starting a company and decided that in parallel to my day job, I&rsquo;ll be (literally) burning the midnight oil working on this startup idea i had. Turns out simply spending long hours, going solo, not networking and building without a direction isn&rsquo;t enough (who knew ?). On a side note, this inadvertently helped me build up my skillsets that i think have helped me elsewhere.</p>
+    <p>I graduated from my doctoral studies gung ho about the prospects of starting a company and figured that my day job would be my side job, I&rsquo;ll be (literally) burning the midnight oil working on the startup idea and i should prepare my &lsquo;i am famous now&rsquo; speech. Turns out simply spending long hours, going solo, not networking and building without a direction isn&rsquo;t enough (who knew ?). On a side note, this inadvertently helped me build up my skill sets that i think have helped me elsewhere.</p>
 
-    <p>I figured i&rsquo;ll share some observations of mine that might help others.So here are some things i realized in my attempt to start a software company:</p>
+    <p>I figured I&rsquo;ll share some observations of mine that might help others. So here are some things i realized in my attempt to start a software company:</p>
 
     <p>In broad strokes, I see two directions for any software company:</p>
 
@@ -78,38 +93,40 @@
 
     <p>B) Existing product with a positive delta on some dimension</p>
 
-    <p>Foundational product:</p>
+    <details>
+      <summary>Foundational product:</summary>
+      <ul>
+        <li><p>Long span of R&amp;D required.</p></li>
+        <li><p>Keep on track without following the next shiny thing.</p></li>
+        <li><p>Delusional to go at it solo. Why ?</p>
+          <ul>
+            <li><p>Very likely that research firms with larger resource budgets and heavier, way more smarter and diverse skill sets are having a go at the same problem.</p></li>
+            <li><p>Larger size of firms implies they try and fail faster leading to either a solution or a conclusion much much faster than a team of size 1.</p></li>
+            <li><p>Solo founder mode leads to an echo chamber propagating biases</p></li>
+            <li><p>It is quite difficult to debate with oneself and consistently produce outcomes that are not already known. On a side note, this also implies that the space of possible solutions isn&rsquo;t widened fast enough to outpace teams of size &gt; 1.</p></li>
+          </ul>
+        </li>
+      </ul>
+    </details>
 
-    <ul>
-      <li><p>Long span of R&amp;D required.</p></li>
-      <li><p>Keep on track without following the next shiny thing.</p></li>
-      <li><p>Delusional to go at it solo. Why ?</p>
-        <ul>
-          <li><p>Very likely that research firms with larger resource budgets and heavier, way more smarter and diverse skill sets are having a go at the same problem.</p></li>
-          <li><p>Larger size of firms implies they try and fail faster leading to either a solution or a conclusion much much faster than a team of size 1.</p></li>
-          <li><p>Solo founder mode leads to an echo chamber propagating biases</p></li>
-          <li><p>It is quite difficult to debate with oneself and consistently produce outcomes that are not already known. On a side note, this also implies that the space of possible solutions isn&rsquo;t widened fast enough to outpace teams of size &gt; 1.</p></li>
-        </ul>
-      </li>
-    </ul>
-
-    <p>Refining an existing product:</p>
-
-    <ul>
-      <li><p>Have a very focused scope of refinement. If the scope keeps on creeping, it become a never ending loop of problems to solve.</p></li>
-      <li><p>Primary focus should not be on setting up infrastructure to scale the product. Instead build a MVP which can be beta tested by actual users from your intended target pool.</p>
-        <ul>
-          <li><p>The ideal path here would be to:</p>
-            <ol>
-              <li><p>Iterate a few times on getting feedback and improving following which you would have a clear idea on who the intended user base, whether there is something of actual value.</p></li>
-              <li><p>Release product to pubic, word-of-mouth userbase.</p></li>
-              <li><p>If there is sufficient pull for the product, proceed to thinking about scaling the underlying infra.</p></li>
-            </ol>
-          </li>
-        </ul>
-      </li>
-      <li><p>The field of scaling infrastructure and setting up a robust DevOps system is ripe with things to learn and tweak, hence its very easy to get distracted from the actual point of focus which is to understand what is it that provides value to a user.</p></li>
-    </ul>
+    <details>
+      <summary>Refining an existing product:</summary>
+      <ul>
+        <li><p>Have a very focused scope of refinement. If the scope keeps on creeping, it become a never ending loop of problems to solve.</p></li>
+        <li><p>Primary focus should not be on setting up infrastructure to scale the product. Instead build a MVP which can be beta tested by actual users from your intended target pool.</p>
+          <ul>
+            <li><p>The ideal path here would be to:</p>
+              <ol>
+                <li><p>Iterate a few times on getting feedback and improving following which you would have a clear idea on who the intended user base, whether there is something of actual value.</p></li>
+                <li><p>Release product to pubic, word-of-mouth userbase.</p></li>
+                <li><p>If there is sufficient pull for the product, proceed to thinking about scaling the underlying infra.</p></li>
+              </ol>
+            </li>
+          </ul>
+        </li>
+        <li><p>The field of scaling infrastructure and setting up a robust DevOps system is ripe with things to learn and tweak, hence its very easy to get distracted from the actual point of focus which is to understand what is it that provides value to a user.</p></li>
+      </ul>
+    </details>
   </main>
 </body>
 </html>
