@@ -25,13 +25,19 @@
     }
     body {
       margin: 0;
+      min-height: 100vh;
+      min-height: 100dvh;
+      display: flex;
+      flex-direction: column;
       background: var(--bg);
       color: var(--fg);
       font-family: Manjari, Georgia, "Times New Roman", serif;
       line-height: 1.65;
     }
     main {
+      flex: 1;
       max-width: 42rem;
+      width: 100%;
       margin: 0 auto;
       padding: 3rem 1.25rem;
     }
@@ -69,9 +75,11 @@
       text-decoration: underline;
     }
     footer {
+      flex-shrink: 0;
       font-size: 0.85rem;
       color: var(--muted);
-      margin-top: 3rem;
+      text-align: center;
+      padding: 1.25rem;
     }
   </style>
 </head>
@@ -84,7 +92,7 @@
         <span class="date">November 15, 2026</span>
       </li>
     </ul>
-    <footer>&copy; 2026 nhalib &middot; all rights reserved</footer>
   </main>
+  <footer>&copy; 2026 nhalib &middot; all rights reserved</footer>
 </body>
 </html>
